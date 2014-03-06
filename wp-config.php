@@ -17,17 +17,10 @@
 // ** MySQL settings - You can get this info from your web host ** //
 
 // MySQL settings - You can get this info from your web host //
-if (WP_ENV == 'development') {
-    define('DB_NAME', 'mydb-dev');
-    define('DB_USER', 'root');
-    define('DB_PASSWORD', '');
-    define('DB_HOST', 'localhost');
-} else {
-    define('DB_NAME', 'mydb-prod');
-    define('DB_USER', 'username');
-    define('DB_PASSWORD', 'pasdword');
-    define('DB_HOST', 'mysql.mysite.com');
-}
+define('DB_NAME', 'db_programacion_nerd');
+define('DB_USER', 'root');
+define('DB_PASSWORD', 'root');
+define('DB_HOST', 'localhost');
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
 
@@ -91,7 +84,7 @@ if ( !defined('ABSPATH') )
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
 
-define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '/wordpress');
+define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . 'programacion-nerd/wordpress');
 define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME']);
 define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content');
 define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/wp-content');
